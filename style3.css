@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+/*section{
+  background-image: url(img/—Pngtree—abstract\ fluid\ gradient\ background\ with_1199248.jpg);
+	background-size: cover;
+	animation-name: back;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+  height: 100vh;
+}*/
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+}
+.center h1{
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid silver;
+}
+.center form{
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+form .txt_field{
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 30px 0;
+}
+.txt_field input{
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+.txt_field label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
+.txt_field span::before{
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #2691d9;
+  transition: .5s;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+  top: -5px;
+  color: #2691d9;
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+  width: 100%;
+}
+.pass{
+  margin: -5px 0 20px 5px;
+  color: #a6a6a6;
+  cursor: pointer;
+}
+.pass:hover{
+  text-decoration: underline;
+}
+/*input[type="submit"]{
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  background: #2691d9;
+  border-radius: 25px;
+  font-size: 18px;
+  color: #e9f4fb;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+}
+  input[type="submit"]:hover{
+  border-color: #2691d9;
+  transition: .5s;
+}*/
+
+.signup_link{
+  margin: 30px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #666666;
+}
+.signup_link a{
+  color: #2691d9;
+  text-decoration: none;
+}
+.signup_link a:hover{
+  text-decoration: underline;
+}
+
+/*@keyframes back{
+	0%{
+		-webkit-filter: ();
+	}
+	100%{
+		-webkit-filter: hue-rotate(360deg);
+	}
+}*/
+
+
+/* Animation de bouton */
+
+button{
+  position: relative;
+  height: 60px;
+  width: 200px;
+  margin: 0 60px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background: #111;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+button:first-child:hover{
+  background: linear-gradient(90deg, #ad04e5, #c33987, #540694, #882194);
+  background-size: 400%;
+}
+
+button:first-child:before{
+  content: '';
+  position: absolute;
+  background: inherit;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  border-radius: 50px;
+  filter: blur(20px);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+button:first-child:hover:before{
+  opacity: 1;
+  z-index: -1;
+}
+button:hover{
+  z-index: 1;
+  animation: glow 8s linear infinite;
+}
+@keyframes glow {
+  0%{
+    background-position: 0%;
+  }
+  100%{
+    background-position: 400%;
+  }
+}
+/* Fin bouton anime */
+
+
+
+/* Fond d'ecran anime */
+@keyframes animate {
+  0%{
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+      border-radius: 0;
+  }
+  100%{
+      transform: translateY(-1000px) rotate(720deg);
+      opacity: 0;
+      border-radius: 50%;
+  }
+}
+
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  background: #6a4ec8;
+  overflow: hidden;
+}
+.background li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 40s linear infinite;
+}
+
+.background li:nth-child(0) {
+  left: 28%;
+  width: 36px;
+  height: 36px;
+  bottom: -36px;
+  animation-delay: 1s;
+}
+.background li:nth-child(1) {
+  left: 87%;
+  width: 84px;
+  height: 84px;
+  bottom: -84px;
+  animation-delay: 1s;
+}
+.background li:nth-child(2) {
+  left: 77%;
+  width: 32px;
+  height: 32px;
+  bottom: -32px;
+  animation-delay: 7s;
+}
+.background li:nth-child(3) {
+  left: 76%;
+  width: 33px;
+  height: 33px;
+  bottom: -33px;
+  animation-delay: 10s;
+}
+.background li:nth-child(4) {
+  left: 49%;
+  width: 109px;
+  height: 109px;
+  bottom: -109px;
+  animation-delay: 13s;
+}
+.background li:nth-child(5) {
+  left: 24%;
+  width: 94px;
+  height: 94px;
+  bottom: -94px;
+  animation-delay: 4s;
+}
+.background li:nth-child(6) {
+  left: 1%;
+  width: 69px;
+  height: 69px;
+  bottom: -69px;
+  animation-delay: 22s;
+}
+.background li:nth-child(7) {
+  left: 79%;
+  width: 52px;
+  height: 52px;
+  bottom: -52px;
+  animation-delay: 10s;
+}
+.background li:nth-child(8) {
+  left: 68%;
+  width: 114px;
+  height: 114px;
+  bottom: -114px;
+  animation-delay: 1s;
+}
+.background li:nth-child(9) {
+  left: 88%;
+  width: 122px;
+  height: 122px;
+  bottom: -122px;
+  animation-delay: 16s;
+}
+.background li:nth-child(10) {
+  left: 9%;
+  width: 78px;
+  height: 78px;
+  bottom: -78px;
+  animation-delay: 17s;
+}
+.background li:nth-child(11) {
+  left: 54%;
+  width: 91px;
+  height: 91px;
+  bottom: -91px;
+  animation-delay: 53s;
+}
+.background li:nth-child(12) {
+  left: 80%;
+  width: 65px;
+  height: 65px;
+  bottom: -65px;
+  animation-delay: 53s;
+}
+.background li:nth-child(13) {
+  left: 3%;
+  width: 54px;
+  height: 54px;
+  bottom: -54px;
+  animation-delay: 33s;
+}
+.background li:nth-child(14) {
+  left: 45%;
+  width: 91px;
+  height: 91px;
+  bottom: -91px;
+  animation-delay: 3s;
+}
+.background li:nth-child(15) {
+  left: 22%;
+  width: 70px;
+  height: 70px;
+  bottom: -70px;
+  animation-delay: 57s;
+}
+.background li:nth-child(16) {
+  left: 66%;
+  width: 57px;
+  height: 57px;
+  bottom: -57px;
+  animation-delay: 27s;
+}
+.background li:nth-child(17) {
+  left: 37%;
+  width: 53px;
+  height: 53px;
+  bottom: -53px;
+  animation-delay: 26s;
+}
