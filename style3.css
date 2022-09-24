@@ -14,13 +14,12 @@ body{
 
 .titre{
   position: absolute;
-  top: 10%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 400px;
-  background: white;
   border-radius: 10px;
-  box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0);
 }
 .titre h1{
   display: flex;
@@ -634,3 +633,20 @@ undefined
 
 
 
+/*Texte animation*/
+.container {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.text {
+  font-weight: 100;
+  font-size: 28px;
+  color: #ffffff;
+}
+.dud {
+  color: #080303;
+}
+/*Fin texte animation*/
