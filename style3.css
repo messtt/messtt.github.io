@@ -7,24 +7,21 @@
 }
 body{
   background-image: url(img/—Pngtree—abstract\ fluid\ gradient\ background\ with_1199248.jpg);
+  background-size: cover;
   margin: 0;
   padding: 0;
   height: 100vh;
 }
 
-.titre{
-  position: absolute;
-  top: 20%;
+section div.titre{
+  position: relative;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 350%);
   width: 400px;
   border-radius: 10px;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0);
 }
-.titre h1{
-  display: flex;
-  justify-content: center;
-}
+
 
 /*section{
   background-image: url(img/—Pngtree—abstract\ fluid\ gradient\ background\ with_1199248.jpg);
