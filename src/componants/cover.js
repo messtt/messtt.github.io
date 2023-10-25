@@ -6,8 +6,12 @@ import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 import { scrollToPosition } from '../utils/scroll';
 import lottie from 'lottie-web';
 import animationData from '../assets/animation_lo5u2mqc.json';
+import { animationTextRandom } from '../animation/text_random';
 
 function Cover() {
+    document.addEventListener("DOMContentLoaded", function() {
+        animationTextRandom(document.querySelector(".content_title_name"));
+    });
     const canvasRef = useRef(null);
 
     useEffect(() => {

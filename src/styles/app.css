@@ -10,29 +10,6 @@ a {
     text-decoration: none;
 }
 
-/* Barre de défilement verticale */
-/* Firefox */
-* {
-    scrollbar-width: thin;
-    scrollbar-color: red green;
-}
-
-/* Barre de défilement horizontale */
-/* Firefox */
 * {
     scrollbar-width: none;
-    scrollbar-color: blue yellow;
 }
-
-/* Personnalisation des couleurs */
-/* Vous pouvez personnaliser les couleurs ici */
-* {
-    scrollbar-face-color: yellow;
-    scrollbar-track-color: lightgray;
-    scrollbar-arrow-color: black;
-    scrollbar-highlight-color: blue;
-    scrollbar-3dlight-color: darkgray;
-    scrollbar-shadow-color: gray;
-    scrollbar-darkshadow-color: gray;
-}
-
