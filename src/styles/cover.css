@@ -1,0 +1,27 @@
+.cover {
+    position: relative;
+}
+
+.cover_animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Places the animation behind other content */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 500px 30% 500px 30%;
+}
+.content_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    background-color: white;
+    border-radius: 10px;
+}
