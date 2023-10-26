@@ -97,9 +97,6 @@ function Header() {
                     <img className="logo" src="https://th.bing.com/th/id/OIG.PtN75cFh36yOkKfT3kBh?w=270&h=270&c=6&r=0&o=5&pid=ImgGn" alt={"logo"}/>
                     <ul className="ul_main_header">
                         <li className="li_main_header"><a className="a_category" href="/">Accueil</a></li>
-                        <li className="li_main_header"><a className="a_category" href="/a-propos">À propos</a></li>
-                        <li className="li_main_header"><a className="a_category" href="/services">Services</a></li>
-                        <li className="li_main_header"><a className="a_category" href="/contact">Contact</a></li>
                         <li className="li_main_header"><a className="a_category" href="/contact">Contact</a></li>
                         <li className="li_main_header"><a className="a_category" href="/contact">Contact</a></li>
                         <li className="li_main_header"><a className="a_category" href="/contact">Contact</a></li>
