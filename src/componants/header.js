@@ -63,22 +63,22 @@ function Header() {
                     <ul className="ul_second_header_media">
                         <li className="li_second_header_media">
                             <a href="https://discord.com/">
-                                <img className="logo_discord" src="https://logodownload.org/wp-content/uploads/2017/11/discord-logo-4-1.png" alt="discord" width={20} height={20}/>
+                                <img className="logo_discord" src="../assets/discord.png" alt="discord" width={20} height={20}/>
                             </a>
                         </li>
                         <li className="li_second_header_media">
                             <a href="https://www.instagram.com/">
-                                <img className="logo_instagram" src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-instagram-icon-png-image_6315974.png" alt="instagram" width={20} height={20}/>
+                                <img className="logo_instagram" src="../assets/instagram-logo.png" alt="instagram" width={20} height={20}/>
                             </a>
                         </li>
                         <li className="li_second_header_media">
                             <a href="https://slack.com/">
-                                <img className="logo_slack" src="https://cdn.icon-icons.com/icons2/3053/PNG/512/slack_macos_bigsur_icon_189725.png" alt="slack" width={20} height={20}/>
+                                <img className="logo_slack" src="../assets/slack-logo.png" alt="slack" width={20} height={20}/>
                             </a>
                         </li>
                         <li className="li_second_header_media">
                             <a href="https://github.com/">
-                                <img className="logo_github" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github" width={20} height={20}/>
+                                <img className="logo_github" src="../assets/github-logo.png" alt="github" width={20} height={20}/>
                             </a>
                         </li>
                     </ul>
@@ -94,7 +94,7 @@ function Header() {
             </div>
             <div className="main_header">
                 <nav className="nav_main_header">
-                    <img className="logo" src="https://th.bing.com/th/id/OIG.PtN75cFh36yOkKfT3kBh?w=270&h=270&c=6&r=0&o=5&pid=ImgGn" alt={"logo"}/>
+                    <img className="logo" src="../assets/logo.png" alt={"logo"}/>
                     <ul className="ul_main_header">
                         <li className="li_main_header"><a className="a_category" href="/">Accueil</a></li>
                         <li className="li_main_header"><a className="a_category" href="/contact">Contact</a></li>
