@@ -19,7 +19,7 @@ function Cover() {
 
         const sketch = (p) => {
             let squares = [];
-            const squareSize = 50;
+            const squareSize = 20;
 
             p.setup = () => {
                 p.createCanvas(window.innerWidth, p.windowHeight).parent(canvasRef.current);
@@ -36,14 +36,14 @@ function Cover() {
             };
 
             p.draw = () => {
-                p.background(35, 39, 42);
+                p.background(76, 78, 204)
 
                 for (let i = 0; i < squares.length; i++) {
                     const square = squares[i];
                     const distance = p.dist(p.mouseX, p.mouseY, square.x, square.y);
-                    const size = p.map(distance, 0, p.width, 5, 30);
-                    p.fill(68, 70, 193);
-                    p.rect(square.x, square.y, size, size);
+                    const size = p.map(distance, 0, p.width, 15, 70);
+                    p.fill(35, 39, 42);
+                      p.rect(square.x, square.y, size, size);
                 }
             };
         };
