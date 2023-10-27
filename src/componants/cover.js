@@ -4,7 +4,7 @@ import p5 from 'p5';
 import { gsap } from 'gsap';
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 import lottie from 'lottie-web';
-import animationData from '../assets/animation_lo5u2mqc.json';
+import animationData from '../assets/scroll_down.json';
 import { animationTextRandom } from '../animation/text_random';
 
 gsap.registerPlugin(ScrollToPlugin);
