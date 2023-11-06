@@ -4,7 +4,7 @@ body {
     background-color: black;
     background-attachment: fixed;
     font-family: Poppins Condensed, sans-serif;
-    cursor: none;
+
 }
 
 a {
@@ -13,6 +13,7 @@ a {
 
 * {
     scrollbar-width: none;
+    cursor: none;
 }
 
 .mouse_following {
