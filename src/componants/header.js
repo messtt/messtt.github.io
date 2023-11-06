@@ -17,7 +17,9 @@ function Header() {
         const animationContainer = document.getElementById('burger_animation');
         const burgerMenu = document.getElementById('burger_spawn_menu');
         const mainHeader = document.querySelector('.main_header');
+        const li_main_header = document.querySelectorAll('.li_main_header');
         const secondHeader = document.querySelector('.second_header');
+
         const anim = lottie.loadAnimation({
             container: animationContainer,
             renderer: 'svg',
@@ -27,6 +29,23 @@ function Header() {
         });
 
         let isMenuOpen = false;
+
+        li_main_header.forEach((item) => {
+            item.addEventListener('mouseenter', () => {
+                gsap.to(item, {
+                    y: 5,
+                    duration: 0.1,
+                });
+            });
+            item.addEventListener('mouseleave', () => {
+                gsap.to(item, {
+                    y: 0,
+                    duration: 0.1,
+                });
+            });
+        });
+
+
 
         animationContainer.addEventListener('click', () => {
             if (!isMenuOpen) {
@@ -82,29 +101,21 @@ function Header() {
 
     return (
         <header className="header">
-            <div className="second_header">
-                <div className="second_header_media">
-                    <a className="a_media" href="https://www.instagram.com/"><img className="img_media" src={instagram_logo} alt={"instagram"} width={20} height={20}/></a>
-                    <a className="a_media" href="https://www.slack.com/"><img className="img_media" src={slack_logo} alt={"slack"} width={20} height={20}/></a>
-                    <a className="a_media" href="https://www.discord.com/"><img className="img_media" src={discord_logo} alt={"discord"} width={20} height={20}/></a>
-                    <a className="a_media" href="https://www.github.com/"><img className="img_media" src={github_logo} alt={"github"} width={20} height={20}/></a>
-                </div>
-                <div className="second_header_contact">
-                    <a className="a_contact" href="/contact">Contact</a>
-                    <a className="a_contact" href="/contact">Contact</a>
-                </div>
-            </div>
             <div className="main_header">
-                <img className="logo" src={Logo} alt={"logo"} width={50} height={50}/>
-                <nav className="nav_main_header">
-                    <ul className="ul_main_header">
-                        <li className="li_main_header"><a className="a_category" href="/">Accueil</a></li>
-                        <li className="li_main_header"><a className="a_category" href="/contact">Projets</a></li>
-                        <li className="li_main_header"><a className="a_category" href="/contact">Competence</a></li>
-                        <li className="li_main_header"><a className="a_category" href="/contact">Methode</a></li>
-                        <li className="li_main_header"><a className="a_category" href="/contact">Tarifs</a></li>
-                    </ul>
-                </nav>
+                <div className="site_title">
+                    <p className="title">CORENTIN.ALB</p>
+                </div>
+                <div className="nav_site">
+                    <nav className="nav_main_header">
+                        <ul className="ul_main_header">
+                            <li className="li_main_header"><a className="a_category" href="/">Accueil</a></li>
+                            <li className="li_main_header"><a className="a_category" href="/contact">Projets</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div className="nav_social">
+                    <li className="li_main_header"><a className="a_category" href="/contact">Contact for a project</a></li>
+                </div>
             </div>
             <div className="main_header_mobile">
                 <div className="lottie" id="burger_animation"/>
