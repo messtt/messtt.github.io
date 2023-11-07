@@ -27,13 +27,6 @@ function Cover() {
         });
         const box = document.querySelector('.cover');
 
-        gsap.to(box, {
-            duration: 2,
-            background: 'linear-gradient(to right, #000E00, #222222)',
-            repeat: -1,
-            yoyo: true,
-        });
-
         function despawn_text(element) {
             gsap.to(element, {
                 y: 300,

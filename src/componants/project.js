@@ -6,15 +6,44 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Project() {
     useEffect(() => {
+        const project = document.querySelector('.project');
         const boxes = document.querySelectorAll('.container');
         const scrollHorizontalElement = document.querySelector('.project_box');
-        const isLeft = true;
+        const project_image_title = document.querySelectorAll('.project_image_title');
+        let isLeft = true;
         let boxesPosition = 2000;
 
         const horizontalAnimation = gsap.from(scrollHorizontalElement, {
             x: 2000,
             ease: 'none',
         });
+
+        project_image_title.forEach((el) => {
+            let direction = 'to left';
+            isLeft = !isLeft;
+            if (isLeft) {
+                direction = 'to right';
+            }
+            el.addEventListener('mouseenter', () => {
+                gsap.to(el, {
+                    duration: 0.5,
+                    color: '#000',
+                    background: `linear-gradient(${direction}, #fff, rgba(255, 255, 255, 0) 100%)`,
+                    ease: 'none',
+                });
+            });
+
+            el.addEventListener('mouseleave', () => {
+                gsap.to(el, {
+                    duration: 0.5,
+                    color: '#fff',
+                    background: `linear-gradient(${direction}, #fff, rgba(255, 255, 255, 0) 0%)`,
+                    ease: 'none',
+                });
+            });
+        });
+
+        isLeft = true;
 
         boxes.forEach((box) => {
             if (isLeft) {
