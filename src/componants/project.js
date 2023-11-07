@@ -27,18 +27,14 @@ function Project() {
             el.addEventListener('mouseenter', () => {
                 gsap.to(el, {
                     duration: 0.5,
-                    color: '#000',
-                    background: `linear-gradient(${direction}, #fff, rgba(255, 255, 255, 0) 100%)`,
-                    ease: 'none',
+                    textDecoration: 'text-decoration: underline overline #ff3028;',
                 });
             });
 
             el.addEventListener('mouseleave', () => {
                 gsap.to(el, {
                     duration: 0.5,
-                    color: '#fff',
-                    background: `linear-gradient(${direction}, #fff, rgba(255, 255, 255, 0) 0%)`,
-                    ease: 'none',
+                    textDecoration: 'none',
                 });
             });
         });
@@ -76,15 +72,15 @@ function Project() {
     return (
         <div className="project">
             <div className="container project_box1">
-                <img src="https://th.bing.com/th/id/OIG.jFBs3qXz4ADuUkgdmy2S?w=270&h=270&c=6&r=0&o=5&pid=ImgGn" className="img_project" alt="Votre image" />
+                <img src="https://media.tarkett-image.com/large/TH_24567081_24594081_24596081_24601081_24563081_24565081_24588081_001.jpg" className="img_project" alt="Votre image" />
                 <div className="project_image_title image_title_box1">Hac ex causa conlaticia stipe Valerius humatur ille Publicola et subsidiis amicorum mariti inops cum liberis uxor alitur Reguli et dotatur ex aerario filia Scipionis, cum nobilitas florem adultae virginis diuturnum absentia pauperis erubesceret patris.</div>
             </div>
             <div className="container project_box2">
                 <div className="project_image_title image_title_box2">Hac ex causa conlaticia stipe Valerius humatur ille Publicola et subsidiis amicorum mariti inops cum liberis uxor alitur Reguli et dotatur ex aerario filia Scipionis, cum nobilitas florem adultae virginis diuturnum absentia pauperis erubesceret patris.</div>
-                <img src="https://th.bing.com/th/id/OIG.jFBs3qXz4ADuUkgdmy2S?w=270&h=270&c=6&r=0&o=5&pid=ImgGn" className="img_project" alt="Votre image" />
+                <img src="https://media.tarkett-image.com/large/TH_24567081_24594081_24596081_24601081_24563081_24565081_24588081_001.jpg" className="img_project" alt="Votre image" />
             </div>
             <div className="container project_box3">
-                <img src="https://th.bing.com/th/id/OIG.jFBs3qXz4ADuUkgdmy2S?w=270&h=270&c=6&r=0&o=5&pid=ImgGn" className="img_project" alt="Votre image" />
+                <img src="https://media.tarkett-image.com/large/TH_24567081_24594081_24596081_24601081_24563081_24565081_24588081_001.jpg" className="img_project" alt="Votre image" />
                 <div className="project_image_title image_title_box3">Hac ex causa conlaticia stipe Valerius humatur ille Publicola et subsidiis amicorum mariti inops cum liberis uxor alitur Reguli et dotatur ex aerario filia Scipionis, cum nobilitas florem adultae virginis diuturnum absentia pauperis erubesceret patris.</div>
             </div>
         </div>

@@ -5,7 +5,8 @@ import Header from './componants/header';
 import Footer from './componants/footer';
 import Project from "./componants/project";
 import Cover from "./componants/cover";
-import ParticlesBackground from "./animation/particuleConfig"; // Importez le composant
+import SectionSeparator from "./componants/sectionSeparator";
+import ParticlesBackground from "./animation/particuleConfig";
 
 import './styles/app.css';
 function App() {
@@ -35,7 +36,9 @@ function App() {
             <div className="mouse_following"></div>
             <Header />
             <Cover />
+            <SectionSeparator />
             <Project />
+            <SectionSeparator />
             <Footer />
         </div>
     );

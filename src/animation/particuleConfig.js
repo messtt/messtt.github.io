@@ -35,7 +35,7 @@ const ParticlesBackground = () => {
                 move: {
                     enable: true,
                     speed: 1,
-                    direction: "bottom",
+                    direction: "none",
                     random: true,
                     straight: false,
                     out_mode: "out",

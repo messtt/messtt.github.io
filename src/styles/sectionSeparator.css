@@ -1,0 +1,6 @@
+.section_separator {
+    margin: auto;
+    height: 1px;
+    width: 90vw;
+    background-color: red;
+}
