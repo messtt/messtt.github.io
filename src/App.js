@@ -5,6 +5,7 @@ import Header from './componants/header';
 import Footer from './componants/footer';
 import Project from "./componants/project";
 import Cover from "./componants/cover";
+import Presentation from "./componants/presentation";
 import SectionSeparator from "./componants/sectionSeparator";
 import ParticlesBackground from "./animation/particuleConfig";
 
@@ -36,6 +37,8 @@ function App() {
             <div className="mouse_following"></div>
             <Header />
             <Cover />
+            <SectionSeparator />
+            <Presentation />
             <SectionSeparator />
             <Project />
             <SectionSeparator />

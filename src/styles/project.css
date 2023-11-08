@@ -3,17 +3,9 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 0 0 300px 0;
     margin-top: 100px;
     background: -moz-linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0,0,0,1) 30%);
-}
-
-.projet_view {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    margin-top: 50px;
 }
 
 .container {
@@ -24,14 +16,14 @@
 }
 
 .project_box1{
-    margin-left: 500px;
+    margin-left: 700px;
 }
 
 .project_box3 {
-    margin-left: 500px;
+    margin-left: 700px;
 }
 .project_box2 {
-    margin-right: 500px;
+    margin-right: 700px;
 }
 
 .img_project {

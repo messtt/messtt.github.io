@@ -1,5 +1,9 @@
 import React from 'react';
 import './../styles/footer.css';
+import instagram_logo from './../assets/instagram-logo.png';
+import slack_logo from './../assets/slack-logo.png';
+import discord_logo from './../assets/discord.png';
+import github_logo from './../assets/github-logo.png';
 
 function Footer() {
     return (
@@ -34,22 +38,22 @@ function Footer() {
                     <ul className="ul_second_header_media">
                         <li className="li_second_header_media">
                             <a href="https://discord.com/">
-                                <img className="logo_discord" src="https://assets.stickpng.com/images/62b2261f038aad4d3ed7ca48.png" alt="discord" width={20} height={20}/>
+                                <img className="logo_discord" src={discord_logo} alt="discord" width={20} height={20}/>
                             </a>
                         </li>
                         <li className="li_second_header_media">
                             <a href="https://www.instagram.com/">
-                                <img className="logo_instagram" src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-instagram-icon-png-image_6315974.png" alt="instagram" width={20} height={20}/>
+                                <img className="logo_instagram" src={instagram_logo} alt="instagram" width={20} height={20}/>
                             </a>
                         </li>
                         <li className="li_second_header_media">
                             <a href="https://slack.com/">
-                                <img className="logo_slack" src="https://cdn.icon-icons.com/icons2/3053/PNG/512/slack_macos_bigsur_icon_189725.png" alt="slack" width={20} height={20}/>
+                                <img className="logo_slack" src={slack_logo} alt="slack" width={20} height={20}/>
                             </a>
                         </li>
                         <li className="li_second_header_media">
                             <a href="https://github.com/">
-                                <img className="logo_github" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github" width={20} height={20}/>
+                                <img className="logo_github" src={github_logo} alt="github" width={20} height={20}/>
                             </a>
                         </li>
                     </ul>

@@ -1,0 +1,36 @@
+.presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 300px 0;
+    height: 100vh;
+    background-color: black;
+}
+
+.presentation_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.presentation_content_image {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.presentation_content_text {
+    margin: 10px 100px;
+}
+
+.presentation_text {
+    color: white;
+    font-size: 5rem;
+    text-align: justify;
+}

@@ -5,10 +5,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import lottie from 'lottie-web';
 import animationData from '../assets/burger_menu.json';
 import Logo from './../assets/logo.png';
-import instagram_logo from './../assets/instagram-logo.png';
-import slack_logo from './../assets/slack-logo.png';
-import discord_logo from './../assets/discord.png';
-import github_logo from './../assets/github-logo.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -110,6 +106,7 @@ function Header() {
                         <ul className="ul_main_header">
                             <li className="li_main_header"><a className="a_category" href="/">Accueil</a></li>
                             <li className="li_main_header"><a className="a_category" href="/contact">Projets</a></li>
+                            <li className="li_main_header"><a className="a_category" href="/contact">Presentation</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -127,9 +124,7 @@ function Header() {
                     <ul className="ul_main_header">
                         <li className="li_main_header"><a className="a_category" href="/">Accueil</a></li>
                         <li className="li_main_header"><a className="a_category" href="/contact">Projets</a></li>
-                        <li className="li_main_header"><a className="a_category" href="/contact">Competence</a></li>
-                        <li className="li_main_header"><a className="a_category" href="/contact">Methode</a></li>
-                        <li className="li_main_header"><a className="a_category" href="/contact">Tarifs</a></li>
+                        <li className="li_main_header"><a className="a_category" href="/contact">Presentation</a></li>
                     </ul>
                 </nav>
             </div>
