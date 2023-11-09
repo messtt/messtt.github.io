@@ -6,7 +6,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Project() {
     useEffect(() => {
-        const project = document.querySelector('.project');
         const boxes = document.querySelectorAll('.container');
         const scrollHorizontalElement = document.querySelector('.project_box');
         const project_image_title = document.querySelectorAll('.project_image_title');
@@ -19,11 +18,6 @@ function Project() {
         });
 
         project_image_title.forEach((el) => {
-            let direction = 'to left';
-            isLeft = !isLeft;
-            if (isLeft) {
-                direction = 'to right';
-            }
             el.addEventListener('mouseenter', () => {
                 gsap.to(el, {
                     duration: 0.5,
@@ -39,8 +33,6 @@ function Project() {
             });
         });
 
-        isLeft = true;
-
         boxes.forEach((box) => {
             if (isLeft) {
                 boxesPosition = -boxesPosition;
@@ -55,7 +47,6 @@ function Project() {
                     toggleActions: 'restart none none none',
                 },
                 x: boxesPosition,
-                scrub: true,
                 ease: 'none',
             });
         });
@@ -70,7 +61,7 @@ function Project() {
     }, []);
 
     return (
-        <div className="project">
+        <div className="project" id="project">
             <div className="container project_box1">
                 <img src="https://media.tarkett-image.com/large/TH_24567081_24594081_24596081_24601081_24563081_24565081_24588081_001.jpg" className="img_project" alt="Votre image" />
                 <div className="project_image_title image_title_box1">Hac ex causa conlaticia stipe Valerius humatur ille Publicola et subsidiis amicorum mariti inops cum liberis uxor alitur Reguli et dotatur ex aerario filia Scipionis, cum nobilitas florem adultae virginis diuturnum absentia pauperis erubesceret patris.</div>

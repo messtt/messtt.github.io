@@ -1,36 +1,82 @@
-.presentation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0 0 300px 0;
-    height: 100vh;
-    background-color: black;
+@media (min-width: 1340px) {
+    .presentation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 0 300px 0;
+        height: 100vh;
+        background-color: black;
+    }
+
+    .presentation_content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .presentation_content_image {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .presentation_content_text {
+        margin: 10px 100px;
+    }
+
+    .presentation_text {
+        color: white;
+        font-size: 3vw;
+        text-align: justify;
+    }
 }
 
-.presentation_content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100vw;
-}
+@media (max-width: 1340px) {
+    .presentation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 0 0 0;
+        height: 100vh;
+        background-color: black;
+    }
 
-.presentation_content_image {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+    .presentation_content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+    }
 
-.presentation_content_text {
-    margin: 10px 100px;
-}
+    .presentation_content_image {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
-.presentation_text {
-    color: white;
-    font-size: 5rem;
-    text-align: justify;
+    .presentation_content_text {
+        margin: 10px 10px;
+    }
+
+    .presentation_text {
+        color: white;
+        font-size: 3vw;
+        text-align: justify;
+    }
+
+    .presentation_image {
+        width: 30vw;
+        height: 30vh;
+    }
 }

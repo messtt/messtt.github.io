@@ -1,31 +1,17 @@
 import React, { useEffect, useRef } from 'react';
 import '../styles/cover.css';
-import p5 from 'p5';
 import { gsap } from 'gsap';
-import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
-import lottie from 'lottie-web';
-import animationData from '../assets/scroll_down.json';
-import { animationTextRandom } from '../animation/text_random';
 
-gsap.registerPlugin(ScrollToPlugin);
+gsap.registerPlugin();
 
 function Cover() {
-    const canvasRef = useRef(null); // Add a canvas ref
+    const canvasRef = useRef(null);
 
     useEffect(() => {
-        const sub = document.querySelectorAll('.content_subtitle_name');
         const spawn_text_1 = document.querySelectorAll('.spawn_text_1');
         const spawn_text_2 = document.querySelectorAll('.spawn_text_2');
         const spawn_text_3 = document.querySelectorAll('.spawn_text_3');
-        const animationContainer = document.getElementById('your-lottie-animation');
-        const anim = lottie.loadAnimation({
-            container: animationContainer,
-            renderer: 'svg',
-            loop: true,
-            autoplay: true,
-            animationData: animationData,
-        });
-        const box = document.querySelector('.cover');
+        let currentIndex = 0;
 
         function despawn_text(element) {
             gsap.to(element, {
@@ -54,8 +40,6 @@ function Cover() {
 
             });
         }
-
-        let currentIndex = 0;
 
         async function changeText() {
             switch (currentIndex) {
@@ -96,7 +80,7 @@ function Cover() {
     }, []);
 
     return (
-        <div className="cover">
+        <div className="cover" id="cover">
             <div className="cover_animation" ref={canvasRef}></div>
             <div className="content">
                 <div className="content_box">

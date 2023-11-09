@@ -1,13 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import './../styles/presentation.css';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
-
 function Presentation() {
+
     useEffect(() => {
         const presentation_content = document.querySelector('.presentation_content');
+        const presentation_content_image = document.querySelector('.presentation_content_image');
 
         gsap.to(presentation_content, {
             scrollTrigger: {
@@ -19,14 +20,11 @@ function Presentation() {
                 markers: true,
             },
             scale: 0.7,
-            scrub: 0,
             boxShadow: '0px 0px 50px 4px #4446c1',
             borderRadius: '30px',
 
             duration: 1,
         });
-
-        const presentation_content_image = document.querySelector('.presentation_content_image');
 
         gsap.fromTo(presentation_content_image, {
             opacity: 1,
@@ -35,7 +33,7 @@ function Presentation() {
             opacity: 1,
             y: 350,
             duration: 1,
-            zIndex: 999999,
+            zIndex: 9,
             scrollTrigger: {
                 trigger: presentation_content_image,
                 start: 'top 100%',
@@ -46,12 +44,10 @@ function Presentation() {
                 markers: true
             }
         });
-
-
     }, []);
 
     return (
-        <div className="presentation">
+        <div className="presentation" id="presentation">
             <div className="presentation_container">
                 <div className="presentation_title">
                     <h1>Présentation</h1>

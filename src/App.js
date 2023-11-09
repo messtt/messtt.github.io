@@ -9,6 +9,8 @@ import Presentation from "./componants/presentation";
 import SectionSeparator from "./componants/sectionSeparator";
 import ParticlesBackground from "./animation/particuleConfig";
 
+gsap.registerPlugin();
+
 import './styles/app.css';
 function App() {
     useEffect(() => {
@@ -37,11 +39,8 @@ function App() {
             <div className="mouse_following"></div>
             <Header />
             <Cover />
-            <SectionSeparator />
             <Presentation />
-            <SectionSeparator />
             <Project />
-            <SectionSeparator />
             <Footer />
         </div>
     );

@@ -1,42 +1,93 @@
-.cover {
-    position: relative;
-    height: 100vh;
-    width: 100vw;
+@media (min-width: 1340px) {
+    .cover {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .cover_animation {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .content_box {
+        margin-top: 300px;
+    }
+
+    .content_title {
+        color: #4446c1;
+        margin: 0;
+        font-size: 6vw;
+    }
+
+    .content_description {
+        color: #fff;
+    }
+
+    .lottie {
+        padding: 10px 30% 10px 30%
+    }
+
+    .content_subtitle_name {
+        display: flex;
+        position: absolute;
+        flex-direction: row;
+    }
 }
 
-.cover_animation {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
+/* PHONE */
 
-.content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+@media (max-width: 1340px) {
+    .cover {
+        position: relative;
+        height: 80vh;
+        width: 100vw;
+    }
 
-}
-.content_box {
-    margin-top: 300px;
-}
+    .cover_animation {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 
-.content_title {
-    color: #4446c1;
-    margin: 0;
-    font-size: 10rem;
-}
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
-.content_description {
-    color: #fff;
-}
+    }
 
-.lottie {
-    padding: 10px 30% 10px 30%
-}
+    .content_box {
+        margin-top: 300px;
+    }
 
-.content_subtitle_name {
-    display: flex;
-    position: absolute;
-    flex-direction: row;
+    .content_title {
+        color: #4446c1;
+        margin: 0;
+        font-size: 6vw;
+    }
+
+    .content_description {
+        color: #fff;
+    }
+
+    .lottie {
+        padding: 10px 30% 10px 30%
+    }
+
+    .content_subtitle_name {
+        display: flex;
+        position: absolute;
+        flex-direction: row;
+    }
 }
