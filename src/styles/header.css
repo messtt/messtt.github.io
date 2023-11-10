@@ -96,7 +96,7 @@
         height: 100%;
         transform: translateX(-1000px);
         display: none;
-        z-index: 9999999;
+        z-index: 99999;
     }
     .title {
         color: #ffffff;

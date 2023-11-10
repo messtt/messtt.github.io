@@ -46,7 +46,7 @@ function Footer() {
             }, {
                 opacity: 1,
                 y: -200,
-                scale: 1.3,
+                scale: 1.2,
                 border: '1px solid #ffffff',
                 borderRadius: '10px',
                 padding: '20px 10vw',

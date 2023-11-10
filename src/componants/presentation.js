@@ -31,7 +31,7 @@ function Presentation() {
             y: 650
         }, {
             opacity: 1,
-            y: 350,
+            y: 0,
             duration: 1,
             zIndex: 9,
             scrollTrigger: {

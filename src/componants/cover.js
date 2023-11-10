@@ -15,7 +15,7 @@ function Cover() {
 
         function despawn_text(element) {
             gsap.to(element, {
-                y: 300,
+                y: '5vw',
                 duration: 2,
                 opacity: 0,
                 stagger: 0.2,

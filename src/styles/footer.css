@@ -97,6 +97,9 @@
         height: 5vw;
         border-radius: 50%;
     }
+    .send_email {
+        text-align: center;
+    }
 }
 
 @media (max-width: 1340px) {
