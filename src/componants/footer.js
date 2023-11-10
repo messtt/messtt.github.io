@@ -14,53 +14,56 @@ function Footer() {
         const info = document.querySelector('.info');
         const li_contact_personal = document.querySelector('.li_contact_perso');
         const send_email = document.querySelector('.send_email');
+        const isMobile = window.innerWidth <= 1340;
 
-        li_contact_personal.addEventListener('mouseenter', () => {
-            send_email.style.color = '#000';
-        });
-        li_contact_personal.addEventListener('mouseleave', () => {
-            send_email.style.color = '#ffffff';
-        });
-
-        li_footer.forEach((element) => {
-            element.addEventListener('mouseenter', () => {
-                li_contact_personal.style.color = '#ffffff';
-                gsap.to(element, {
-                    y: 5,
-                    backgroundColor: '#ffffff',
-                    duration: 0.2,
-                });
+        if (!isMobile) {
+            li_contact_personal.addEventListener('mouseenter', () => {
+                send_email.style.color = '#000';
             });
-            element.addEventListener('mouseleave', () => {
-                gsap.to(element, {
+            li_contact_personal.addEventListener('mouseleave', () => {
+                send_email.style.color = '#ffffff';
+            });
+
+            li_footer.forEach((element) => {
+                element.addEventListener('mouseenter', () => {
+                    li_contact_personal.style.color = '#ffffff';
+                    gsap.to(element, {
+                        y: 5,
+                        backgroundColor: '#ffffff',
+                        duration: 0.2,
+                    });
+                });
+                element.addEventListener('mouseleave', () => {
+                    gsap.to(element, {
+                        y: 0,
+                        backgroundColor: '#000000',
+                        duration: 0.2,
+                    });
+                });
+
+                gsap.fromTo(info, {
+                    opacity: 0,
                     y: 0,
-                    backgroundColor: '#000000',
-                    duration: 0.2,
+                    scale: 2.5,
+                }, {
+                    opacity: 1,
+                    y: -200,
+                    scale: 1.2,
+                    border: '1px solid #ffffff',
+                    borderRadius: '10px',
+                    padding: '20px 10vw',
+                    duration: 1,
+                    scrollTrigger: {
+                        trigger: info,
+                        marginTop: '100px',
+                        backgroundColor: 'white',
+                        marginBottom: '100px',
+                        start: 'top 80%',
+                        toggleActions: 'play none none reverse',
+                    }
                 });
             });
-
-            gsap.fromTo(info, {
-                opacity: 0,
-                y: 0,
-                scale: 2.5,
-            }, {
-                opacity: 1,
-                y: -200,
-                scale: 1.2,
-                border: '1px solid #ffffff',
-                borderRadius: '10px',
-                padding: '20px 10vw',
-                duration: 1,
-                scrollTrigger: {
-                    trigger: info,
-                    marginTop: '100px',
-                    backgroundColor: 'white',
-                    marginBottom: '100px',
-                    start: 'top 80%',
-                    toggleActions: 'play none none reverse',
-                }
-            });
-        });
+        }
     }, []);
     return (
         <footer className="footer" id="footer">
