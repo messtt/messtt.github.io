@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import './../styles/project.css';
 import { gsap } from 'gsap';
-import { ScrollTrigger} from 'gsap/ScrollTrigger';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 gsap.registerPlugin(ScrollTrigger);
 
 function Project() {
@@ -45,7 +46,7 @@ function Project() {
                     end: 'top center',
                     toggleActions: 'restart none none none',
                 },
-                x: boxesPosition,
+                x: window.innerWidth > 600 ? boxesPosition : 0, // Adjust as needed
                 ease: 'none',
             });
         });
@@ -78,3 +79,4 @@ function Project() {
 }
 
 export default Project;
+
