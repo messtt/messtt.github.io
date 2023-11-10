@@ -7,9 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Project() {
     useEffect(() => {
-        // Vérifier si la largeur de l'écran est inférieure à 600 pixels (ajustez selon vos besoins)
-        const isMobile = window.innerWidth <= 1340;
-
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
         if (!isMobile) {
             const boxes = document.querySelectorAll('.container');
             const scrollHorizontalElement = document.querySelector('.project_box');

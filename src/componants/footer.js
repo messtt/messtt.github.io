@@ -14,7 +14,7 @@ function Footer() {
         const info = document.querySelector('.info');
         const li_contact_personal = document.querySelector('.li_contact_perso');
         const send_email = document.querySelector('.send_email');
-        const isMobile = window.innerWidth <= 1340;
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
         if (!isMobile) {
             li_contact_personal.addEventListener('mouseenter', () => {

@@ -15,22 +15,27 @@ import './styles/app.css';
 function App() {
     useEffect(() => {
         const follower = document.querySelector('.mouse_following');
-        function updateFollowerPosition(e) {
-            gsap.to(follower, {
-                x: e.clientX - follower.offsetWidth / 2 + window.scrollX,
-                y: e.clientY - follower.offsetHeight / 2 + window.scrollY,
-                filter: 'blur(10px)',
-                duration: 0.1,
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        if (!isMobile) {
+            function updateFollowerPosition(e) {
+                gsap.to(follower, {
+                    x: e.clientX - follower.offsetWidth / 2 + window.scrollX,
+                    y: e.clientY - follower.offsetHeight / 2 + window.scrollY,
+                    filter: 'blur(10px)',
+                    display: 'block',
+                    backgroundColor: '#ffffff',
+                    duration: 0.1,
+                });
+            }
+
+            document.addEventListener('mousemove', (e) => {
+                updateFollowerPosition(e);
+            });
+
+            document.addEventListener('scroll', (e) => {
+                updateFollowerPosition(e);
             });
         }
-        document.addEventListener('mousemove', (e) => {
-            updateFollowerPosition(e);
-        });
-
-        document.addEventListener('scroll', (e) => {
-            updateFollowerPosition(e);
-        });
-
     }, []);
 
     return (
