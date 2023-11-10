@@ -17,7 +17,6 @@ function Presentation() {
                 end: 'top 40%',
                 toggleActions: 'play reverse reverse reverse',
                 scrub: 0,
-                markers: true,
             },
             scale: 0.7,
             boxShadow: '0px 0px 50px 4px #4446c1',
@@ -41,7 +40,7 @@ function Presentation() {
                 toggleActions: 'play none none reverse',
                 scrub: 0,
                 ondurationchange: 2,
-                markers: true
+
             }
         });
     }, []);

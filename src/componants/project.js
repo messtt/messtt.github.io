@@ -43,7 +43,6 @@ function Project() {
                     scrub: true,
                     start: 'top bottom',
                     end: 'top center',
-                    markers: true,
                     toggleActions: 'restart none none none',
                 },
                 x: boxesPosition,
