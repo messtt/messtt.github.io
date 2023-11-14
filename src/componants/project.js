@@ -67,6 +67,9 @@ function Project() {
         <div className="project" id="project">
             return (
             <div className="project" id="project">
+                <div className="project_title">
+                    <h1>Mes projets :</h1>
+                </div>
                 <div className="container project_box1">
                     <img src="https://media.tarkett-image.com/large/TH_24567081_24594081_24596081_24601081_24563081_24565081_24588081_001.jpg" className="img_project" alt="Votre image" />
                     <div className="project_image_title image_title_box1">Hac ex causa conlaticia stipe Valerius humatur ille Publicola et subsidiis amicorum mariti inops cum liberis uxor alitur Reguli et dotatur ex aerario filia Scipionis, cum nobilitas florem adultae virginis diuturnum absentia pauperis erubesceret patris.</div>

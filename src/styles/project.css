@@ -1,11 +1,11 @@
 @media (min-width: 1340px) {
     .project {
+        margin-top: 100px;
         display: flex;
         align-items: center;
         flex-direction: column;
         padding: 0 0 300px 0;
-        margin-top: 100px;
-        background: -moz-linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%);
+        background: black;
     }
 
     .container {
@@ -36,8 +36,16 @@
         left: 0;
     }
 
+    .project_title {
+        color: white;
+        font-size: 50px;
+        font-weight: bold;
+        margin-bottom: 2vw;
+        align-items: start;
+    }
+
     .project_image_title {
-        font-size: 25px;
+        font-size: 30px;
         font-weight: bold;
         margin-top: 20px;
         text-justify: auto;
@@ -54,18 +62,18 @@
 
     .image_title_box1 {
         top: 50%;
-        transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-55%);
         padding: 10px 50px 10px 50px;
     }
 
     .image_title_box2 {
-        transform: translateX(50%) translateY(50%);
+        transform: translateX(50%) translateY(30%);
         padding: 10px 50px 20px 50px;
     }
 
     .image_title_box3 {
         top: 50%;
-        transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-55%);
         padding: 10px 50px 10px 50px;
 
     }
@@ -78,7 +86,7 @@
         flex-direction: column;
         padding: 0 0 300px 0;
         margin-top: 100px;
-        background: -moz-linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%);
+        background: black;
     }
 
     .container {
@@ -100,16 +108,18 @@
     .project_image_title {
         font-size: 2vw;
         font-weight: bold;
-        margin-top: 20px;
+        margin-top: 50%;
         text-justify: auto;
         color: #fff;
         text-align: justify;
         border-radius: 20px;
-        width: 100%;
+        width: 150%;
+        margin-left: -13vw;
         position: absolute;
         border-style: solid;
         border-width: 1px;
         border-color: #fff;
+        padding: 10px 50px;
         z-index: 1;
     }
 }

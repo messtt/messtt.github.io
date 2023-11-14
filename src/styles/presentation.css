@@ -1,14 +1,14 @@
 @media (min-width: 1340px) {
     .presentation {
-        background: content-box radial-gradient(#181818, #000000);
+        background: -moz-linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%);
         background-size: 100% 50%;
         width: 100vw;
     }
     .presentation_title {
         color: white;
-        font-size: 3vw;
+        font-size: 1vw;
         text-align: center;
-        margin-bottom: 100px;
+        margin-bottom: 3vw;
         align-items: start;
     }
 
@@ -33,6 +33,7 @@
     .presentation_content {
         position: absolute;
         margin-top: 40%;
+        background-color: rgba(0, 0, 0, 0.5);
     }
 
     .presentation_content_text {
@@ -41,7 +42,7 @@
 
     .presentation_text {
         color: white;
-        font-size: 2.5vw;
+        font-size: 2vw;
         text-align: justify;
     }
 }
@@ -80,12 +81,14 @@
 
     .presentation_text {
         color: white;
-        font-size: 5vw;
+        font-size: 4vw;
         text-align: justify;
+        margin: 10px 200px;
     }
 
     .presentation_image {
         width: 30vw;
-        height: 30vw;
+        height: 36vw;
+        border-radius: 20px;
     }
 }

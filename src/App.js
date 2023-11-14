@@ -19,8 +19,12 @@ function App() {
         const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
         if (!isMobile) {
             function updateFollowerPosition(e) {
-                cursor.style.left = e.clientX + 'px';
-                cursor.style.top = e.clientY + 'px';
+                gsap.to(cursor, {
+                    duration: 0.2,
+                    left: e.clientX,
+                    top: e.clientY,
+                    ease: 'power4.out'
+                });
             }
             window.addEventListener('mousemove', updateFollowerPosition);
         }
@@ -28,7 +32,7 @@ function App() {
 
     return (
         <div className="App">
-            {!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && <ParticlesBackground />}
+
             <div className="mouse_following"></div>
             <Header />
             <Cover />

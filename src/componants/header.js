@@ -83,8 +83,8 @@ function Header() {
                     <nav className="nav_main_header">
                         <ul className="ul_main_header">
                             <li className="li_main_header"><a className="a_category" href="#cover">Accueil</a></li>
-                            <li className="li_main_header"><a className="a_category" href="#project">Projets</a></li>
                             <li className="li_main_header"><a className="a_category" href="#presentation">Presentation</a></li>
+                            <li className="li_main_header"><a className="a_category" href="#project">Projets</a></li>
                             <li className="li_main_header"><a className="a_category" href="#footer">Contact</a></li>
                         </ul>
                     </nav>
@@ -101,8 +101,8 @@ function Header() {
                 <nav className="nav_main_header">
                     <ul className="ul_main_header">
                         <li className="li_main_header"><a className="a_category" href="/">Accueil</a></li>
-                        <li className="li_main_header"><a className="a_category" href="/contact">Projets</a></li>
                         <li className="li_main_header"><a className="a_category" href="/contact">Presentation</a></li>
+                        <li className="li_main_header"><a className="a_category" href="/contact">Projets</a></li>
                         <li className="li_main_header"><a className="a_category" href="/contact">Contact</a></li>
                     </ul>
                 </nav>
