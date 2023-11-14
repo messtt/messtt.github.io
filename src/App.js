@@ -12,6 +12,7 @@ import ParticlesBackground from "./animation/particuleConfig";
 gsap.registerPlugin();
 
 import './styles/app.css';
+
 function App() {
     useEffect(() => {
         const follower = document.querySelector('.mouse_following');
@@ -40,7 +41,7 @@ function App() {
 
     return (
         <div className="App">
-            <ParticlesBackground />
+            {!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && <ParticlesBackground />}
             <div className="mouse_following"></div>
             <Header />
             <Cover />

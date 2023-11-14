@@ -26,25 +26,6 @@ function Presentation() {
 
                 duration: 1,
             });
-
-            gsap.fromTo(presentation_content_image, {
-                opacity: 1,
-                y: 650
-            }, {
-                opacity: 1,
-                y: 0,
-                duration: 1,
-                zIndex: 9,
-                scrollTrigger: {
-                    trigger: presentation_content_image,
-                    start: 'top 100%',
-                    end: 'top 50%',
-                    toggleActions: 'play none none reverse',
-                    scrub: 0,
-                    ondurationchange: 2,
-
-                }
-            });
         }
     }, []);
 
