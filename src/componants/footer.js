@@ -16,7 +16,6 @@ function Footer() {
         const send_email = document.querySelector('.send_email');
         const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
-        if (!isMobile) {
             li_contact_personal.addEventListener('mouseenter', () => {
                 send_email.style.color = '#000';
             });
@@ -63,8 +62,6 @@ function Footer() {
                     }
                 });
             });
-
-        }
     }, []);
     return (
         <footer className="footer" id="footer">
