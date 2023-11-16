@@ -8,12 +8,65 @@ gsap.registerPlugin(ScrollTrigger);
 function Presentation() {
 
     useEffect(() => {
-        const presentation_content = document.querySelector('.presentation_content');
-        const presentation_content_image = document.querySelector('.presentation_content_image');
         const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
         if (!isMobile) {
+            const presentation_container = document.querySelector('.presentation_container');
+            const presentation_title = document.querySelector('.presentation_title');
+            const presentation_image = document.querySelector('.presentation_image');
+            const presentation_text = document.querySelector('.presentation_text');
 
+            gsap.from(presentation_title, {
+                scrollTrigger: {
+                    trigger: presentation_title,
+                    scrub: true,
+                    start: 'top bottom',
+                    end: 'top center',
+                    toggleActions: 'restart none none none',
+                },
+                x: 200,
+                opacity: 0,
+                ease: 'none',
+            });
+
+            gsap.from(presentation_image, {
+                scrollTrigger: {
+                    trigger: presentation_image,
+                    scrub: true,
+                    start: 'top bottom',
+                    end: 'top center',
+                    toggleActions: 'restart none none none',
+                },
+                x: -200,
+                opacity: 0,
+                ease: 'none',
+            });
+
+            gsap.from(presentation_text, {
+                scrollTrigger: {
+                    trigger: presentation_text,
+                    scrub: true,
+                    start: 'top bottom',
+                    end: 'top center',
+                    toggleActions: 'restart none none none',
+                },
+                y: 200,
+                opacity: 0,
+                ease: 'none',
+            });
+
+            gsap.from(presentation_container, {
+                scrollTrigger: {
+                    trigger: presentation_container,
+                    scrub: true,
+                    start: 'top bottom',
+                    end: 'top center',
+                    toggleActions: 'restart none none none',
+                },
+                x: 200,
+                opacity: 0,
+                ease: 'none',
+            });
         }
     }, []);
 

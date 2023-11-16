@@ -27,4 +27,6 @@ a {
     pointer-events: none;
     transform: translateX(-25px) translateY(-25px);
     z-index: 999999;
+    mix-blend-mode: difference; /* Utiliser le mode de mélange "difference" */
 }
+

@@ -63,6 +63,7 @@ function Footer() {
                     }
                 });
             });
+
         }
     }, []);
     return (
@@ -72,43 +73,43 @@ function Footer() {
                     <p className="info_contact_title_p">Corentin Albertus</p>
                     <h3 className="info_contact_title_h3">Contactez-moi</h3>
                 </div>
-                    <div className="info_contact_social">
-                        <ul className="ul_second_header">
-                            <li className="li_footer li_contact_perso">
-                                <a className="send_email" href="#">
-                                    Envoyer un mail
-                                </a>
-                            </li>
-                        </ul>
-                        <ul className="ul_second_header_media">
-                            <li className="li_footer li_contact_media">
-                                <a href="https://discord.com/">
-                                    <img className="logo_discord" src={discord_logo} alt="discord" width={20} height={20}/>
-                                </a>
-                            </li>
-                            <li className="li_footer li_contact_media">
-                                <a href="https://discord.com/">
-                                    <img className="logo_discord" src={discord_logo} alt="discord" width={20} height={20}/>
-                                </a>
-                            </li>
-                            <li className="li_footer li_contact_media">
-                                <a href="https://www.instagram.com/">
-                                    <img className="logo_instagram" src={instagram_logo} alt="instagram" width={20} height={20}/>
-                                </a>
-                            </li>
-                            <li className="li_footer li_contact_media">
-                                <a href="https://slack.com/">
-                                    <img className="logo_slack" src={slack_logo} alt="slack" width={20} height={20}/>
-                                </a>
-                            </li>
-                            <li className="li_footer li_contact_media">
-                                <a href="https://github.com/">
-                                    <img className="logo_github" src={github_logo} alt="github" width={20} height={20}/>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                <div className="info_contact_social">
+                    <ul className="ul_second_header">
+                        <li className="li_footer li_contact_perso">
+                            <a className="send_email" href="mail:t4u.mest.1997@gmail.com">
+                                Envoyer un mail
+                            </a>
+                        </li>
+                    </ul>
+                    <ul className="ul_second_header_media">
+                        <li className="li_footer li_contact_media">
+                            <a href="https://discord.com/">
+                                <img className="logo_discord" src={discord_logo} alt="discord" width={20} height={20}/>
+                            </a>
+                        </li>
+                        <li className="li_footer li_contact_media">
+                            <a href="https://discord.com/">
+                                <img className="logo_discord" src={discord_logo} alt="discord" width={20} height={20}/>
+                            </a>
+                        </li>
+                        <li className="li_footer li_contact_media">
+                            <a href="https://www.instagram.com/">
+                                <img className="logo_instagram" src={instagram_logo} alt="instagram" width={20} height={20}/>
+                            </a>
+                        </li>
+                        <li className="li_footer li_contact_media">
+                            <a href="https://slack.com/">
+                                <img className="logo_slack" src={slack_logo} alt="slack" width={20} height={20}/>
+                            </a>
+                        </li>
+                        <li className="li_footer li_contact_media">
+                            <a href="https://github.com/">
+                                <img className="logo_github" src={github_logo} alt="github" width={20} height={20}/>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
+            </div>
         </footer>
     );
 }

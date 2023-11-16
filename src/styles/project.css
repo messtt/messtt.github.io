@@ -77,6 +77,12 @@
         padding: 10px 50px 10px 50px;
 
     }
+    .footer_container {
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+    }
 }
 
 @media (max-width: 1340px) {
